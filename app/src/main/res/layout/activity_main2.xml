@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Splash">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="226dp">
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/text_PID"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/productID"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:hint="Product ID"
+                android:text=""
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/text_Pname"
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Product Name"
+                android:inputType="none"
+                android:textColorHighlight="#757575"
+                android:textColorHint="#B1B1B1"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/text_PQ"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/productQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Product Quantity"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:id="@+id/text_PR"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/productReview"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Product Review"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Add"
+            android:textColor="#FF0000"
+            android:textColorHighlight="#757575"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/findBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Find"
+            android:textColor="#01BC45"
+            android:textColorHighlight="#757575"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Delete"
+            android:textColor="#002AFF"
+            android:textColorHighlight="#757575"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
