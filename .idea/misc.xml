@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/drawable/animation.xml" value="0.257" />
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_anim_tween.xml" value="0.27447916666666666" />
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_animation.xml" value="0.27447916666666666" />
         <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_main2.xml" value="0.27447916666666666" />
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_three.xml" value="0.27025641025641023" />
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/activity_weather_api.xml" value="0.27447916666666666" />
+        <entry key="..\:/3rd year/2ndSem/Mobile Midterm2/Code/app/src/main/res/layout/splash.xml" value="0.27447916666666666" />
       </map>
     </option>
   </component>

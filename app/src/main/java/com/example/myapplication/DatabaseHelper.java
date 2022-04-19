@@ -11,9 +11,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "users.db";
     public static final String TABLE_NAME = "users_data";
     public static final String COL1 = "ID";
-    public static final String COL2 = "PRODUCT_NAME";
-    public static final String COL3 = "PRODUCT_QUANTITY";
-    public static final String COL4 = "PRODUCT_REVIEW";
+    public static final String COL2 = "NAME";
+    public static final String COL3 = "SURNAME";
+    public static final String COL4 = "NATIONALID";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
@@ -23,9 +23,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String createTable = "CREATE TABLE " + TABLE_NAME +
                 " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                " PRODUCT_NAME TEXT, " +
-                "PRODUCT_QUANTITY TEXT, " +
-                "PRODUCT_REVIEW TEXT)";
+                "NAME TEXT, " +
+                "SURNAME TEXT, " +
+                "NATIONALID TEXT)";
         db.execSQL(createTable);
     }
 
@@ -35,12 +35,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean addData(String productName, String productQuantity, String productReview) {
+    public boolean addData(String name, String surname, String nationalid) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL2, productName);
-        contentValues.put(COL3, productQuantity);
-        contentValues.put(COL4, productReview);
+        contentValues.put(COL2, name);
+        contentValues.put(COL3, surname);
+        contentValues.put(COL4, nationalid);
 
         long result = db.insert(TABLE_NAME, null, contentValues);
 
@@ -69,8 +69,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
-    public boolean deleteData (String product_id) {
+    public boolean deleteData (String text) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_NAME, COL1 + "=" + product_id, null) > 0;
+        return db.delete(TABLE_NAME,  COL2 + "like %" +text + "% OR" + COL3 + "like %" + text + "%", null) > 0;
+
     }
 }

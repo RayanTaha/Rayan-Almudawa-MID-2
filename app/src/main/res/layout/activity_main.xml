@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".Splash">
+    tools:context=".ActivityOne">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -25,16 +25,17 @@
                 android:id="@+id/text_PID"
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="ID:"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/productID"
-                android:layout_width="230dp"
-                android:layout_height="match_parent"
-                android:hint="Product ID"
-                android:text=""
-                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="number" />
+
         </TableRow>
 
         <TableRow
@@ -49,16 +50,16 @@
                 android:id="@+id/text_Pname"
                 android:layout_width="26dp"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="Name:"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/productName"
+                android:id="@+id/userName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:height="48dp"
                 android:ems="10"
-                android:hint="Product Name"
+                android:hint="Name"
                 android:inputType="none"
                 android:textColorHighlight="#757575"
                 android:textColorHint="#B1B1B1"
@@ -77,19 +78,17 @@
                 android:id="@+id/text_PQ"
                 android:layout_width="162dp"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="Surname"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/productQuantity"
+                android:id="@+id/userSurname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="48dp"
                 android:ems="10"
-                android:hint="Product Quantity"
-                android:inputType="numberDecimal"
-                android:textSize="18sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:hint="Surname"
+                android:inputType="textPersonName" />
+
         </TableRow>
 
         <TableRow
@@ -104,19 +103,17 @@
                 android:id="@+id/text_PR"
                 android:layout_width="152dp"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="NationalID"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/productReview"
-                android:layout_width="225dp"
+                android:id="@+id/userNationalID"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:height="48dp"
                 android:ems="10"
-                android:hint="Product Review"
-                android:inputType="numberDecimal"
-                android:textSize="18sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:hint="NationalID"
+                android:inputType="number" />
+
         </TableRow>
 
     </TableLayout>
@@ -133,37 +130,33 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Add"
+            android:text="Insert"
             android:textColor="#FF0000"
             android:textColorHighlight="#757575"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/findBtn"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="Find"
-            android:textColor="#01BC45"
-            android:textColorHighlight="#757575"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/deleteBtn"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/act1Bttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="Delete"
-            android:textColor="#002AFF"
-            android:textColorHighlight="#757575"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="Go To Activity1" />
+
+        <Button
+            android:id="@+id/act3Bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Go To Activity3" />
     </LinearLayout>
 
 </LinearLayout>
